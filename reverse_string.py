@@ -16,4 +16,4 @@ def reverse_string_second(input_str):
         return input_str
     return reverse_string_second(input_str[1:]) + input_str [0]
 
-print(f"Eto ung sa second: {reverse_string_second(input_str)}")
+print(f"Second method: {reverse_string_second(input_str)}")
