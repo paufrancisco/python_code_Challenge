@@ -3,15 +3,15 @@ def twosum(arr, sum):
     left = 0  # assign left index
     right = len(arr) - 1  # right index will base on its length
     while left < right:  # as long as right is greater than left no repetition
-
-        if arr[left] + arr[right] > sum:
-            right = right - 1
-        elif arr[left] + arr[right] < sum:
-            left = left + 1
-        elif arr[left] + arr[right] == sum:
+        current_sum = arr[left] + arr[right]
+        if  current_sum > sum:
+            right -= 1
+        elif current_sum < sum:
+            left += 1
+        elif current_sum == sum:
             print("Values of pair are", arr[left], "&", arr[right])
-            right = right - 1
-            left = left + 1
+            right -= 1
+            left += 1
         else:
             print("No pairs found")
 
