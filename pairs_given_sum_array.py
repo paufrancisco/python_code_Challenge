@@ -14,7 +14,7 @@ def twosum(arr, sum):
             left += 1
         else:
             print("No pairs found")
-
+            # output for no pairs found
 
 arr = [1, 2, 3, 4, 5]
 sum = 6
