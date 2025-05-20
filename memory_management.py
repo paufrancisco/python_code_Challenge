@@ -1,5 +1,3 @@
-
-
 def greet():
     name = "Alice"  # Local variable
     print("Hello,", name)
